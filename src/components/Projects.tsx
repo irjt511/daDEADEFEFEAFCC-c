@@ -10,7 +10,6 @@ export function Projects() {
       title: " موقع تعريفي ",
       description:
         "موقع تعريفي يدعم السيرة الذاتية، يعرض مهاراته ومؤهلاته بطريقة أنيقة وبسيطة لتقديمه بشكل احترافي وجذاب.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
       imageUrl: "/api/placeholder/600/400",
       projectUrl: "https://www.malawadhi.art",
       featured: true,
@@ -86,21 +85,7 @@ export function Projects() {
 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
-                  {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-2 py-1 bg-white/10 text-white rounded text-xs font-medium border border-white/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                  {project.technologies.length > 3 && (
-                    <span className="px-2 py-1 bg-purple-600/20 text-purple-400 rounded text-xs font-medium border border-purple-400/30">
-                      +{project.technologies.length - 3}
-                    </span>
-                  )}
                 </div>
-
                 {/* Action button - only project view */}
                 {project.projectUrl && (
                   <div className="flex">
